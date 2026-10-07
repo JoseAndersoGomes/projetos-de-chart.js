@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu amor</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+            <canvas id="myChart"></canvas>
+            <script>
+const data = {
+  labels: [
+    'andreza',
+    'mae',
+    'sptech',
+    'eu mesmo'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [25, 25, 25,25],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)',
+      'rgb(105, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};const config = {
+  type: 'pie',
+  data: data,
+};
+
+
+const ctx = document.getElementById('myChart');
+        new Chart(ctx, config);
+
+
+
+</script>
+</body>
+</html>
